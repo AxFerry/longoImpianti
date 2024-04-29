@@ -79,6 +79,7 @@ body{
 
 .carousel{
 height: 60dvh;
+    overflow : hide;
 
 }
 .textimg{
@@ -156,7 +157,7 @@ height: 60dvh;
     
     max-height: 600px;
     max-width: 100dvw;
-   /* overflow: hidden; */
+   / overflow: hidden; 
     border-radius: 1rem;
   
 }
