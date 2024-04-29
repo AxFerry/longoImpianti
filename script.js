@@ -29,83 +29,17 @@ menubtn.addEventListener("click" , function showmenu( event ){
 
 })
 /*
-homebtn.addEventListener("click" , function showhome( event ){
-        
-    if(n == 0)
-    { 
-        n++ ;
-        homepage.style.display = 'flex';
-    }
-    else{
-        n = 0;
-        homepage.style.display  = 'none' ;
-    }
-   
 
-})
-lavoribtn.addEventListener("click" , function showlavori( event ){
-        
-    if(n == 0)
-    { 
-        n++ ;
-        lavoripage.style.display = 'flex';
-    }
-    else{
-        n = 0;
-        lavoripage.style.display  = 'none' ;
-    }
-})
-
-//animazone bottone //
-menubtn.addEventListener("mouseover", ifhover);
-function ifhover (event){    
-    menubtn.style.borderBottomColor("red")
-    menubtn.style.borderBottomStyle("solid")
+const Clima(marca,model,btu,prezzo,foto){
+    this.marca = marca,
+    this.model = model,
+    this.btu = btu,
+    this.prezzo = prezzo,
+    this.foto = foto
 }
 
-// Image Slider //
-const slides = document.querySelectorAll(".slide");
-let slidesIndex = 0;
-let intervalid = null ;
+const clima1 = new Clima("samsung" ,"supercool",1800,"gigi4.jpg");
 
-function inizializeSlider(){
-     slides[slidesIndex].classList.add("activeSlide");
-     intervalid = setInterval(nextSlide,3000);
-}
-function showSlides(index){
-    if(index >= slides.length){
-        slidesIndex = 0;
-    }
-    else if (index < 0){
-        slidesIndex = slides.length -1 ;
-    }
-    slides.forEach(slide => {
-        slide.classList.remove("activeSlide");           
-    });slides[slidesIndex].classList.add("activeSlide");
-}
-function prewSlide(){
-   slidesIndex--;
-   showSlides(slidesIndex);
-}
-function nextSlide(){
-    slidesIndex++;
-    showSlides(slidesIndex);
-}/*
- //IMAGE SLIDER//
- let carobtn = document.querySelectorAll("[data-carousel-btn]");
-carobtn.forEach(button => {
-    button.addEventListener("click",()=>{
-        const offset =button.dataset.carouselButton === "next" ? 1 : -1 ;
-        const slides =document.querySelectorAll("slide");
-        const activeSlide= document.querySelector("[data-active]");
-        let slideIndex = [...slides.children].indexOf(activeSlide)+ offset;
-        if(newIndex <0) {newIndex=slides.children.length -1};
-        if(newIndex > slides.children.length){newIndex = 0};
-        slides.children[newIndex].dataset.active = true;
-        delete activeSlide.dataset.active;
-    })
-    
-});
 
 */
 //image slider 2.0//
@@ -135,4 +69,5 @@ prevBtn.addEventListener('click',e=>{
     slides[slideIndex].dataset.active = true;
 });
 
-})
+});
+
