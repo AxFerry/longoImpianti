@@ -150,7 +150,7 @@ height: 60dvh;
 
 .carousel{
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .slides{
