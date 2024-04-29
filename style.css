@@ -79,6 +79,8 @@ body{
 
 .mainpage{
     min-height: 80dvh;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -89,6 +91,7 @@ body{
 
 
 .foot{
+    border-top-left-radius: 2rem;
     padding-top: 50px;
     background-color: blue;
     color: aliceblue;
@@ -149,26 +152,44 @@ body{
 /*carousel*/
 
 .carousel{
+    transform : translateX(5dvw);
+    box-shadow: 1rem black;
+    align-self: center;
+    
     height: 60dvh;
+    width: 95dvw;
     position: relative;
     overflow: hide;
 }
-.textimg{
+.carousel-radiant{
+    z-index: 2;
+    position: absolute;
+    left: 30dvh ;
+    bottom: 2dvh;
     
+    width: 40dvw;
+    height: 3dvh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textimg{
+    font-size: 0.8rem;
     height: 20dvh;
-    background-color: white;
+   text-align: center;
 }
 
 
 .slides{
     
-    max-height: 600px;
-    max-width: 100dvw;
+    max-height: 60dvh;
+    max-width: 80dvw;
    /* overflow: hidden; */
-    border-radius: 1rem;
+    
   
 }
 .slide {
+    
     position: absolute;
    height: 100%;
     width: 100%;
@@ -176,9 +197,10 @@ body{
  
 }
 .slide > img{
+    border-radius: 1rem;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 
 }

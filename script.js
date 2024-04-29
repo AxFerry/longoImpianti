@@ -45,29 +45,152 @@ const clima1 = new Clima("samsung" ,"supercool",1800,"gigi4.jpg");
 //image slider 2.0//
 document.addEventListener('DOMContentLoaded', function () {
 
+
+const slides = document.querySelectorAll(".slide");
+
+let slideIndex = 0;
+slides[slideIndex].dataset.active = true;
+/*
 let nextBtn = document.querySelector("#nextbtn");
 let prevBtn = document.querySelector("#prewbtn");
-const slides = document.querySelectorAll(".slide");
-let slideIndex = 0;
 let intervalid = null;
 slides[slideIndex].dataset.active = true;
-intervalid = setInterval(e=>{delete slides[slideIndex].dataset.active;
-    if(slideIndex == 3){slideIndex = 0;}
+intervalid = setInterval(e=>{
+    delete slides[slideIndex].dataset.active;
+    if(slideIndex == 13){slideIndex = 0;}
     else {slideIndex = slideIndex + 1;}
-    slides[slideIndex].dataset.active = true;},2000);
+    slides[slideIndex].dataset.active = true;},4000);
 
 nextBtn.addEventListener('click',e=>{
     delete slides[slideIndex].dataset.active;
-    if(slideIndex == 3){slideIndex = 0;}
+    if(slideIndex == 13){slideIndex = 0;}
     else {slideIndex = slideIndex + 1;}
     slides[slideIndex].dataset.active = true;
 });
 prevBtn.addEventListener('click',e=>{
     delete slides[slideIndex].dataset.active;
-    if(slideIndex == 0){slideIndex = 3;}
+    if(slideIndex == 0){slideIndex = 13;}
     else{slideIndex = slideIndex -1;}
     slides[slideIndex].dataset.active = true;
 });
 
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll(".slide");
+    */
+
+    const radio1 =document.getElementById("radio1");
+    const radio2 =document.getElementById("radio2");
+    const radio3 =document.getElementById("radio3");
+    const radio4 =document.getElementById("radio4");
+    const radio5 =document.getElementById("radio5");
+    const radio6 =document.getElementById("radio6");
+    const radio7 =document.getElementById("radio7");
+    const radio8 =document.getElementById("radio8");
+    const radio9 =document.getElementById("radio9");
+    const radio10 =document.getElementById("radio10");
+    const radio11 =document.getElementById("radio11");
+    const radio12 =document.getElementById("radio12");
+    const radio13 =document.getElementById("radio13");
+    const radio14 =document.getElementById("radio14");
+
+
+    radio1.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 0;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+    
+    radio2.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 1;  
+        slides[slideIndex].dataset.active = true;    
+    })
+    
+    radio3.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 2;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+    
+    radio4.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 3;  
+        slides[slideIndex].dataset.active = true;    
+    })
+   
+    radio5.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 4;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+    
+    radio6.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 5;  
+        slides[slideIndex].dataset.active = true;    
+    })
+    
+    radio7.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 6;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+    
+    radio8.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 7;  
+        slides[slideIndex].dataset.active = true;    
+    })
+    
+    radio9.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 8;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+    
+    radio10.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 9;  
+        slides[slideIndex].dataset.active = true;    
+    })
+    
+    radio11.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 10;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+    
+    radio12.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 11;  
+        slides[slideIndex].dataset.active = true;    
+    })
+    
+    radio13.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 12;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+    
+    radio4.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 3;  
+        slides[slideIndex].dataset.active = true;    
+    })
+   
+    radio5.addEventListener("click",e=>{
+        delete slides[slideIndex].dataset.active;
+        slideIndex = 4;  
+        slides[slideIndex].dataset.active = true;
+
+    })
+})
