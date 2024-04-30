@@ -164,7 +164,7 @@ body{
 .carousel-radiant{
     z-index: 2;
     position: absolute;
-    justify-self: center;
+    left:25dvw;
     bottom: 2dvh;
     
     width: 40dvw;
