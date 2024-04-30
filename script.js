@@ -50,16 +50,17 @@ const slides = document.querySelectorAll(".slide");
 
 let slideIndex = 0;
 slides[slideIndex].dataset.active = true;
-/*
-let nextBtn = document.querySelector("#nextbtn");
-let prevBtn = document.querySelector("#prewbtn");
-let intervalid = null;
-slides[slideIndex].dataset.active = true;
 intervalid = setInterval(e=>{
     delete slides[slideIndex].dataset.active;
     if(slideIndex == 13){slideIndex = 0;}
     else {slideIndex = slideIndex + 1;}
     slides[slideIndex].dataset.active = true;},4000);
+/*
+let nextBtn = document.querySelector("#nextbtn");
+let prevBtn = document.querySelector("#prewbtn");
+let intervalid = null;
+slides[slideIndex].dataset.active = true;
+
 
 nextBtn.addEventListener('click',e=>{
     delete slides[slideIndex].dataset.active;
@@ -100,32 +101,62 @@ document.addEventListener('DOMContentLoaded', function () {
         delete slides[slideIndex].dataset.active;
         slideIndex = 0;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
     
     radio2.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 1;  
-        slides[slideIndex].dataset.active = true;    
+        slides[slideIndex].dataset.active = true; 
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);   
     })
     
     radio3.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 2;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
     
     radio4.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 3;  
-        slides[slideIndex].dataset.active = true;    
+        slides[slideIndex].dataset.active = true; 
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);   
     })
    
     radio5.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 4;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
     
@@ -133,12 +164,24 @@ document.addEventListener('DOMContentLoaded', function () {
         delete slides[slideIndex].dataset.active;
         slideIndex = 5;  
         slides[slideIndex].dataset.active = true;    
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
     })
     
     radio7.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 6;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
     
@@ -146,12 +189,24 @@ document.addEventListener('DOMContentLoaded', function () {
         delete slides[slideIndex].dataset.active;
         slideIndex = 7;  
         slides[slideIndex].dataset.active = true;    
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
     })
     
     radio9.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 8;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
     
@@ -159,12 +214,24 @@ document.addEventListener('DOMContentLoaded', function () {
         delete slides[slideIndex].dataset.active;
         slideIndex = 9;  
         slides[slideIndex].dataset.active = true;    
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
     })
     
     radio11.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 10;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
     
@@ -172,12 +239,24 @@ document.addEventListener('DOMContentLoaded', function () {
         delete slides[slideIndex].dataset.active;
         slideIndex = 11;  
         slides[slideIndex].dataset.active = true;    
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
     })
     
     radio13.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 12;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
     
@@ -185,12 +264,24 @@ document.addEventListener('DOMContentLoaded', function () {
         delete slides[slideIndex].dataset.active;
         slideIndex = 3;  
         slides[slideIndex].dataset.active = true;    
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
     })
    
     radio5.addEventListener("click",e=>{
         delete slides[slideIndex].dataset.active;
         slideIndex = 4;  
         slides[slideIndex].dataset.active = true;
+        clearInterval(intervalid);
+        intervalid = setInterval(e=>{
+            delete slides[slideIndex].dataset.active;
+            if(slideIndex == 13){slideIndex = 0;}
+            else {slideIndex = slideIndex + 1;}
+            slides[slideIndex].dataset.active = true;},4000);
 
     })
 })
