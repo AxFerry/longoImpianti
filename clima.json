@@ -1,0 +1,54 @@
+
+[ 
+    
+{
+    "marca" :  "samsung",
+    "modello": "topGamma",
+    "immagine": "1.jpeg" ,
+    "BTU" : 2000,
+    "descrizione" : "top di gamma samsung"
+},
+
+{
+    "marca" : "samsung",
+    "modello": "medioGamma",
+    "immagine": "2.jpeg",
+    "BTU" :1800,
+    "descrizione" : "medio di gamma samsung"
+},
+
+
+{
+    "marca" : "daykin",
+    "modello": "topGamma" ,
+    "immagine": "3.jpeg",
+    "BTU" : 2200,
+    "descrizione" : "top di gamma daykin "
+},
+
+{
+    "marca" :  "samsung",
+    "modello": "lowGamma",
+    "immagine": "4.jpeg" ,
+    "BTU" : 2000,
+    "descrizione" : "top di gamma samsung"
+},
+
+{
+    "marca" : "daykin",
+    "modello": "medioGamma",
+    "immagine": "5.jpeg",
+    "BTU" :1800,
+    "descrizione" : "medio di gamma daykin"
+},
+
+
+{
+    "marca" : "daykin",
+    "modello": "lowGamma" ,
+    "immagine": "6.jpeg",
+    "BTU" : 2200,
+    "descrizione" : "low di gamma daykin "
+}
+
+]
